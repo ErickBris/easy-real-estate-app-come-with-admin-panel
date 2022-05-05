@@ -1,0 +1,206 @@
+/*menu style*/
+
+@font-face {
+	font-family: 'OpenSans'; /*a name to be used later*/
+	src: url('http://localhost:8081/lrandomdev_client/statics/fonts/OpenSans-Light.ttf'); /*URL to font*/
+}
+
+*{
+	font-family: "OpenSans","Arial",sans-serif !important;
+	font-weight:300;
+}
+
+* .fa{
+	font-family: FontAwesome!important;
+}
+
+#header{
+	background-image: url('http://localhost:8081/documentation_template/statics/images/diamond_bg.png');
+	box-shadow: inset 0 0 10px #000000;	
+	-webkit-box-shadow:inset 0 0 10px #000000;
+	-moz-box-shadow:inset 0 0 10px #000000;
+}
+
+
+#header #nav{
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+#header .doc-info{
+	margin-top: 10px;
+}
+
+#header .doc-info li{
+	list-style: none;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 25px;
+}
+
+#header .doc-name h3{
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+
+body{
+	background-image: url('http://localhost:8081/lrandomdev_client/statics/images/pw_maze_white.png');	
+}
+
+#wrapper .wrapper-inner{
+	background: #f1f1f1;
+	webkit-box-shadow: 0 -2px 2px -2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 -2px 2px -2px rgba(0,0,0,0.2);
+	box-shadow: 0 -2px 2px -2px rgba(0,0,0,0.2);
+}
+
+.page-header h3{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#footer{
+	background: #1a1a1a;
+	box-shadow: inset 0 0 3px #000000;	
+	-webkit-box-shadow:inset 0 0 3px #000000;
+	-moz-box-shadow:inset 0 0 3px #000000;
+}
+
+#footer-inner{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 10px;
+	max-width: 1300px;
+}
+
+#footer-inner .get_in_touch ul{
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-top: -15px;
+}
+
+#footer-inner .get_in_touch li{
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+
+
+#footer-inner .get_in_touch li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#footer-inner .get_in_touch{
+	float: right;
+}
+
+
+.content{
+	display: none;
+	position: relative;
+	overflow: hidden;
+	padding: 10px;
+
+}
+
+.content-inner{
+	padding: 5px;
+	background: #ffffff;
+	border: 1px solid #DDDDDD;
+}
+
+#menu{
+	float: left;
+	width: 300px;
+	height: 100%;
+	background: #1a1a1a;
+}
+
+#menu ul{
+	margin:0px;
+	padding: 0px;
+}
+#menu li{
+	list-style: none;
+}
+
+#menu li a{
+	color: #CCCCCC;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#menu li{
+	margin-top:5px;
+	width: 100%;
+	padding: 6px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+
+#menu span{
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	display: block;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	margin-left: 20px;
+}
+#menu  li > ul{
+	display: none;
+}
+
+#menu li > ul li{
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 12px;
+	margin-left: 30px;
+}
+
+#menu li.active > ul {
+	display: block;
+}
+
+#menu li.active > ul li.active a{
+	color: #ffffff;
+}
+
+#menu{
+	min-height: 1200px;
+	display: block;
+	overflow: auto;
+}
+
+.wrapper-inner{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	min-height:1200px;
+}
+
+#menu li.active{
+	background: rgb(30, 115, 172);
+}
+
+body .content img{
+	width: 100%;
+	height: 100%;
+}

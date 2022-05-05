@@ -1,0 +1,34 @@
+body{
+    background: #F5F5F5;
+}
+
+.form-wrapper{
+    margin: 0px auto;
+    max-width: 300px;
+    padding: 10px;
+    background: #ffffff;
+    margin-top: 50px;
+}
+
+.form-wrapper .page-header{
+  margin-top: 15px;
+}
+
+@media (max-width: 768px){
+    .form-wrapper{
+        max-width: 250px;
+    }
+}
+
+.create-account{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.msg-error {
+    color: #E31E25;
+    margin-top: 5px;
+    display: block;
+    font-size: 13px;
+}

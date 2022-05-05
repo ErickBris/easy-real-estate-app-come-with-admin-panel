@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title></title>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="nav" class="row">
+				<div class="col-md-3">
+					<a href="http://lrandomdev.com"><img src="assets/img/logo.png"></a>
+				</div>
+				<div class="col-md-6 doc-name">
+					<h3>Easy Real Estate Android App Documentation</h3></div>
+					<div class="col-md-3 doc-info">
+						<ul>
+							<li><strong>Author:</strong>&nbsp;<a href="http://lrandomdev.com">Lrandomdev.com</a></li>
+							<li><strong>Date Create:</strong>&nbsp;14  August 2014</li>
+							<li><strong>Version:</strong> 1.0</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper-inner">
+				<div id="menu">
+					<ul>
+						<li class="active"><span><a class="parent" href="#features">Features</a></span></li>
+
+						<li>
+							<span><a class="parent" href="#admin_panel">Admin Panel</a></span>
+							<ul>
+								<li><a href="#install">Install</a></li>
+								<li><a href="#config_mail_server">Config Email Server</a></li>
+								<li><a href="#update">Update</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<span>
+								<a class="parent" href="javascript:void(0)">Android Source Code</a>
+							</span>
+							<ul>
+								<li><a href="#import_to_eclipse">Import to eclipse</a></li>
+								<li><a href="#integrate_google_map">Integrate Google Map</a></li>
+								<li><a href="#config_and_custom">Config And Custom</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div id="features" class="content" style="display:block">
+					<div class="content-inner">
+						<strong>This is a real estate application 
+							template run under Android 
+							platform and come with server 
+							build on php framework included. 
+							This will help you build your own mobile 
+							marketplaces application faster. 
+							With many great features.</strong>
+							<p>
+								<ol>
+									<li>Admob Support with google play services</li>
+									<li>Nice User Interfaces design</li>
+									<li>User can login, edit profile, submit properties, edit properties</li>
+									<li>Admin can manager all in backend panel</li>
+									<li>Backend panel install easy by installer (input well done, no hand setup)</li>
+									<li>The nearest properties around you (using gps)</li>
+									<li>Filter Location with more optional</li>
+									<li>Sliding Menu</li>
+									<li>Custom marker</li>
+									<li>Google maps intergration</li>
+									<li>User guide in documentation file and video</li>
+								</ol>
+							</p>
+						</div>
+					</div>
+
+					<div id="install" class="content">
+						<div class="content-inner">
+							<ol>
+								<li>Download and unzip the package</li>
+								<li>Upload the all file in cms folder to your public_html server</li>
+								<li>Open .htaccess file </li>
+								<br>
+								<p>
+									<img src="assets/screenshots/7-11-2014 4-49-15 PM.png" alt=""><br>Make sure your .htaccess file like this
+								</p>
+								<p><code>RewriteEngine On<br>
+									RewriteCond %{REQUEST_FILENAME} !-f<br>
+									RewriteCond %{REQUEST_FILENAME} !-d<br>
+									RewriteRule ^(.*)$ /index.php/$1 [L] </code></p><br>
+									<li>Using your browser navigate to <b>yourdomain/install/index.php</b>.</li>
+									<li>Create an empty database in your mysql server</li>
+									<li>Input the details specific to your setup using your empty database then submit
+
+										<p><img src="assets/screenshots/7-11-2014 5-01-12 PM.png" alt=""></p></li>
+
+										<li>After in install. Now the install wizard will redirect you to login dashboard, using your account when setup in installing to login.</li>
+										<li>For security reason, please delete install folder after install.
+											<p>&nbsp;</p>
+										</li>
+									</ol>
+								</div>
+							</div>
+							
+							<div id="config_mail_server" class="content">
+								<div class="content-inner">
+									For web send mail auto, we need config smtp mail server, you can use your google mail account or using mandrill services from <a href="https://mandrillapp.com/login/?referrer=%2F">here </a>, i suggest you using mandrill services, envato also using this services, this services allow you send 12k email/month.
+									<br>
+									<strong>To config email using google mail account, please watch video guide on youtube</strong>
+									<br>
+									<a href="https://www.youtube.com/watch?v=ec6mo8Cw9-s">https://www.youtube.com/watch?v=ec6mo8Cw9-s</a>
+									<br>
+									<strong>To config email using mandrill mail services, please watch video guide on youtube</strong>
+									<br>
+									<a href="https://www.youtube.com/watch?v=ZZURleYle8A">https://www.youtube.com/watch?v=ZZURleYle8A</a>
+									<br>
+									Two video is guide for my another project but the cms is same so it will more helpful:)
+								</div>
+							</div>
+
+							<div id="update" class="content">
+								<div class="content-inner">
+									<code>Now do not any update yet!</code>
+								</div>
+							</div>
+
+							<div id="config_and_custom" class="content">
+								<div class="content-inner">
+									<p><em><img src="assets/screenshots/8-13-2014 10-16-26 AM.png" width="1366" height="728"></em></p>
+									<em>
+										<ol>
+
+											<li>
+												<strong>Changing admob publisher id </strong>
+												<p>change value of <code>admob_publisher_id</code> tag with your admob id</p>
+											</li>
+
+											<li>
+												<strong>Changing fanpage link </strong>
+												<p>change value of <code>fan_page_link</code>tag with your facebook fanpage link </p>
+											</li>
+
+
+											<li>
+												<strong>Config app to connect to server </strong>
+												<p>To connect to server, you only need change value of: </p>
+												<p>+,
+													<code>domain_url</code> tag to your domain where you upload php cms .</p>
+													<p>+, <code>type_json_url</code> tag to <code>http://your_domain/api/type_api</code>.</p>
+													<p>+, <code>county_json_url</code> tag to <code>http://your_domain/api/county_api</code>.</p>
+													<p>+, <code>estates_json_url</code> tag to <code>http://your_domain/api/estate_api</code>.</p>
+													<p>+, <code>images_json_url</code> tag to <code>http://your_domain/api/images_api</code>.</p>
+													<p>+, <code>cities_json_url</code> tag to <code>http://your_domain/api/cities_api</code>.</p>
+													<p>+, <code>marker_json_url</code> tag to <code>http://your_domain/api/marker_api</code>.</p>
+													<p>+, <code>amenities_json_url</code> tag to <code>http://your_domain/api/amenities_api</code>.</p>
+													<p>+, <code>cities_json_url</code> tag to <code>http://your_domain/api/cities_api</code>.</p>
+												</li>
+
+											</ol>
+										</em>
+									</div>
+								</div>
+
+								<div id="integrate_google_map" class="content">
+									<div class="content-inner">
+										To integrate google map to the app, watch this video on youtube
+										<br>
+										<a href="https://www.youtube.com/watch?v=r0jo0xzHgAg&feature=share">https://www.youtube.com/watch?v=r0jo0xzHgAg&feature=share
+										</a>
+									</div>
+								</div>
+
+								<div id="import_to_eclipse" class="content">
+									<div class="content-inner">
+										<ol>
+											<li>
+												<p>Open eclipse, Select <code>File - &gt; Import</code> </p>
+												<p>
+													<img src="assets/screenshots/6-11-2014 4-30-25 PM.png" width="1366" height="728">	</p>
+												</li>
+												<li>
+													<p>Select <code> Existing Android Code Into Workspace </code></p>
+													<p>
+														<img src="assets/screenshots/6-11-2014 4-30-38 PM.png" width="1366" height="728">	</p>
+													</li>
+													<li>
+														<p>Navigate to where you extract code and select<strong> DroidMarket</strong> folder, after that, click <strong>OK </strong></p>
+														<p>
+															<img src="assets/screenshots/8-13-2014 9-40-52 AM.png" width="1366" height="728">	</p>
+														</li>
+														<li>
+															<p>Check<strong> Copy projects into workspaces</strong>, Select <code>File - &gt; Import</code>, after that, click<strong> Finish </strong></p>
+															<p>
+																<img src="assets/screenshots/8-13-2014 9-41-18 AM.png" width="1366" height="728">	</p>
+															</li>
+															<li>
+																<p>Wait for eclipse import and build project, after that, if you see some folder have red error, don't worrry , go to <code>Project -&gt; Build Automaticall </code> , after that, restart your eclipse. After restart eclipse,all done :) </p>
+
+																<p> <img src="assets/screenshots/8-13-2014 9-43-45 AM.png" width="1366" height="728"></p>
+																<p>&nbsp;</p>
+															</li>
+														</ol>
+													</div>
+												</div>
+
+
+
+											</div>
+
+											<script type="text/javascript">
+											jQuery(document).ready(function($) {
+												$('#menu li a').click(function() {
+													if($(this).hasClass('parent')){
+														$(this).parent().parent().parent().find('li').removeClass('active');
+														$(this).parent().parent().addClass('active');
+													}else{
+														$(this).parent().parent().find('li').removeClass('active');
+														$(this).parent().addClass('active');
+													}
+													$hash=$(this).attr('href');
+													$('.content').hide();
+													if($hash!=undefined || $hash!=null){
+														window.location.hash = $hash;
+														$($hash).fadeIn();  
+													}
+												});
+
+											});
+											</script>
+
+											<div id="footer">
+												<div id="footer-inner">
+													<div class="copy_right">&copy; Copyright Lrandomdev 2014</div>
+													<div class="get_in_touch">
+														<ul>
+															<li><a href="mailto:luann4099@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+															<li><a href="https://www.facebook.com/pages/LrandomDev/541746319279638?ref=hl"><i class="fa fa-facebook"></i></a></li>
+															<li><a href="https://twitter.com/lrandomdev"><i class="fa fa-twitter"></i></a></li>
+															<li><a href="https://plus.google.com/u/1/116074713175395496992/posts"><i class="fa fa-google-plus"></i></a></li>
+															<li><a href="http://www.pinterest.com/lrandomDev"><i class="fa fa-pinterest"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</body>
+									</html>
